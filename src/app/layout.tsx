@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const syne = Syne({
@@ -61,7 +62,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       lang="en"
       className={`${syne.variable} ${dmSans.variable} ${jetbrains.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[var(--bg)] text-[var(--fg)]">{children}</body>
+      <body className="min-h-full bg-[var(--bg)] text-[var(--fg)]">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
