@@ -5,11 +5,11 @@ export const site = {
   email: "agrawaldevansh2005@gmail.com",
   phone: "8273337174",
   location: "Noida, UP",
-  resume: "https://drive.google.com/file/d/1-tpqyvgbMVtvKoY4M6J23HuGw1ihiK1s/view?usp=drive_link",
+  resume: "https://drive.google.com/file/d/1SJ0c-aZVuZu0lSYEFWKlKB2qsN84hlWL/view?usp=drive_link",
   links: {
-    github: "https://github.com/devanshagrawal",
-    linkedin: "https://www.linkedin.com/in/devanshagrawal",
-    leetcode: "https://leetcode.com/u/agrawaldevansh",
+    github: "https://github.com/dk0509",
+    linkedin: "https://www.linkedin.com/in/devansh0511/",
+    leetcode: "https://leetcode.com/u/dk0509/",
   },
 };
 

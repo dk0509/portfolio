@@ -60,8 +60,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html
       lang="en"
       className={`${syne.variable} ${dmSans.variable} ${jetbrains.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full bg-[var(--bg)] text-[var(--fg)]">{children}</body>
+      <body className="min-h-full bg-[var(--bg)] text-[var(--fg)]" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
