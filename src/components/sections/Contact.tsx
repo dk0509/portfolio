@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Mail, FileText } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { GitHubIcon, LinkedInIcon } from "@/components/ui/BrandIcons";
+import { GitHubIcon, LeetCodeIcon, LinkedInIcon } from "@/components/ui/BrandIcons";
 import { Chapter } from "@/components/ui/Chapter";
 import { site } from "@/data/content";
 import { useExperience } from "@/components/providers/ExperienceProvider";
@@ -69,6 +69,10 @@ export function Contact() {
             <MagneticButton href={site.links.linkedin} target="_blank" rel="noopener noreferrer">
               <LinkedInIcon className="h-4 w-4" />
               LinkedIn
+            </MagneticButton>
+            <MagneticButton href={site.links.leetcode} target="_blank" rel="noopener noreferrer">
+              <LeetCodeIcon className="h-4 w-4" />
+              LeetCode
             </MagneticButton>
             <MagneticButton href={site.resume} target="_blank" rel="noopener noreferrer">
               <FileText className="h-4 w-4" />
